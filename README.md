@@ -14,6 +14,7 @@ _This page will check a Sudoku board and inform the user if it passes or not._
 | **Program will check a row for non-repeated numbers 1-9** | User input: "[1,2,3,4,5,6,7,8,9]" | Output: "True" |
 | **Program will check a column for non-repeated numbers 1-9** | User input: "[1,2,3,4,5,6,7,8,9]" | Output: "True" |
 | **Program will check a box for non-repeated numbers 1-9** | User input: "[1,2,3][4,5,6][7,8,9]" | Output: "True" |
+| **Program will check all rows columns and boxes for non-repeated numbers 1-9** | User input: "correct board" | Output: "True" |
 
 
 ## Setup/Installation Requirements
