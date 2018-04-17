@@ -15,6 +15,7 @@ Board.prototype.checkRow = function (row) {
   }
   return true;
 };
+
 Board.prototype.checkCol = function (col) {
   for (var i = 0; i < 9; i++) {
     var element1 = this.board[i][col];
@@ -27,6 +28,7 @@ Board.prototype.checkCol = function (col) {
   }
   return true;
 };
+
 Board.prototype.checkBox = function (box) {
   var boxElements = [];
   for (var i = box[0]; i < (box[0] + 3); i++) {
@@ -41,6 +43,18 @@ Board.prototype.checkBox = function (box) {
       if (element1 === element2 && l !== k) {
         return false;
       }
+    }
+  }
+  return true;
+};
+
+Board.prototype.checkBoard = function () {
+  for (var i = 0; i < 9; i++) {
+    var row = this.checkRow(i);
+    var col = this.checkCol(i);
+    var box = this.checkBox(this.boxes[i]);
+    if (row === false || col === false || box === false) {
+      return false;
     }
   }
   return true;

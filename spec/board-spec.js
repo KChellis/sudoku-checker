@@ -16,7 +16,7 @@ describe("Board", function(){
   it ("should check a box for non-repeated numbers 1-9", function() {
     expect(newBoard.checkBox([0,0])).toEqual(true);
   });
-  it ("should check all rows columns and boxes for non-repeated numbers 1-9", function() {
-    expect(newBoard.checkBoard().toEqual(true);
+  it ("should check all rows, columns, and boxes for non-repeated numbers 1-9", function() {
+    expect(newBoard.checkBoard(0)).toEqual(true);
   });
 });
